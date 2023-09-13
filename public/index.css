@@ -1,0 +1,44 @@
+body{
+    background-color: #F4EEEE;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    text-transform: capitalize;
+    font-family: 'san-serif','poppins';
+    background-color: #FFB7B7;
+    border-radius: 8px;
+}
+h2{
+    margin: 20px;
+    background-color: #FFDBAA;
+}
+.display{
+    max-height: 600px;
+    text-transform: capitalize;
+    font-family: 'san-serif','poppins';
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+}
+
+.display-count{
+    font-weight: bolder;
+    height: 70px;
+    width: 70px;
+    background-color: #D5FFE4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+}
