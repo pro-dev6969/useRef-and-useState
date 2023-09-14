@@ -1,0 +1,31 @@
+
+
+body{
+    background-color: #EEEEEE;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+
+}
+.heading{
+    color: #053B50;
+}
+.Navlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    color: #176B87
+}
+p{
+    margin: 0;
+    color: #793FDF;
+}
