@@ -1,0 +1,15 @@
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.bttn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.card{
+    width: 40rem;
+}
