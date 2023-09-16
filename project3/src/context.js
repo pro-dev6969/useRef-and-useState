@@ -3,9 +3,11 @@ import cartItems from './cart'
 import reduce from './reduce'
 
 const AppContext = React.createContext()
-
+const initialItem = {
+    data:cartItems
+}
 const AppProvider =({children}) =>{
-    const [state,dispatch] = React.useReducer(reduce,cartItems);
+    const [state,dispatch] = React.useReducer(reduce,initialItem);
 
     const remove =(id) =>{
         dispatch({type:'remove' , id});
@@ -16,7 +18,7 @@ const AppProvider =({children}) =>{
     }
 
     return(
-        <AppContext.Provider value={{remove,clear}}>
+        <AppContext.Provider value={{...state,remove,clear}}>
             {children}
         </AppContext.Provider>
     );
