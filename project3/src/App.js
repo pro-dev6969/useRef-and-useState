@@ -1,16 +1,15 @@
 import React from 'react' 
 import 'bootstrap/dist/css/bootstrap.css'
-import cartItems from './cart';
 import {AppContext, useGlobalContext} from './context'
 
 
 function App() {
-  const {remove , clear} = useGlobalContext()
+  const {data ,remove , clear} = useGlobalContext()
 
   return (
     <div className="App">
       <div className='display'>
-      {cartItems.map((item)=>{
+      {data.map((item)=>{
         const {id , title , price ,image} = item;
         return(
           <div key={id} class="card" >
